@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechX Hacks</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./logo.png">
+</head>
+<body>
+    <header>
+        <a href="#"><img class="logo" src="./logo.png" alt="logo"></a>
+        <nav class="navbar">
+            <a href="#about" class="active">About</a>
+            <a href="#timer">Timer</a>
+            <a href="#timeline">Timeline</a>
+            <a href="./sponsors.html">Sponsors</a>
+            <a href="./register.html">Registration</a>
+            <a href="./faqContact.html">FAQ / Contact</a>
+        </nav>
+    </header>
+
+    <h1> TechX Hacks </h1>
+    <div class="countdown">
+        <div>
+            <p id="days">00</p>
+            <span>Days</span>
+        </div>
+        <div>
+            <p id="hours">00</p>
+            <span>Hours</span>
+        </div>
+        <div>
+            <p id="minutes">00</p>
+            <span>Minutes</span>
+        </div>
+        <div>
+            <p id="seconds">00</p>
+            <span>Seconds</span>
+        </div>
+    </div>
+
+    <h1> Timeline </h1>
+    <div class="timeline">
+        <div class="container left">
+          <div class="content">
+            <h3>15<sup>th</sup>December, 2023</h3>
+            <p>Registration starts</p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <h3>26<sup>th</sup>December, 2023</h3>
+            <p>Registration closes</p>
+          </div>
+        </div>
+        <div class="container left">
+          <div class="content">
+            <h3>29<sup>th</sup>December, 2023</h3>
+            <p>Releasing the Problem Statements</p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <h3>31<sup>st</sup>December, 2023 8:00 am </h3>
+            <p>Reporting to the Venue</p>
+          </div>
+        </div>
+        <div class="container left">
+          <div class="content">
+            <h3>31<sup>st</sup>December, 2023 8:30 am - 9:30 am </h3>
+            <p>Orientation</p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <h3>31<sup>st</sup>December, 2023 10:00 am </h3>
+            <p>Coding Starts</p>
+          </div>
+        </div>
+        <div class="container left">
+            <div class="content">
+              <h3>1<sup>st</sup>Jan, 2024 11:00 am </h3>
+              <p>Judging Round Starts</p>
+            </div>
+        </div>
+        <div class="container right">
+            <div class="content">
+              <h3>1<sup>st</sup>Jan, 2023 3:00 pm </h3>
+              <p>Results</p>
+            </div>
+        </div>
+      </div>
+
+      <div id="initial"><h1>About Us</h1></div>
+<div>
+    <h2><span>Make Community</h2>  
+    <p>
+
+
+        Part of our goal is to grow the community. We'll be doing all we can to make it a great space for everyone to have fun and enjoy, by learning and staying well.
+
+
+    </p>
+</div>
+<div>
+    <h2>College Apps Galore</h2>
+    <p>
+        Being apart of this is one thing, and winning it is another, but something that's awesome is that our highschool students who win get something extra to add on to their resume!
+    </p>
+</div>
+<div>
+    <h2> Prizes for everyone</h2>
+    <p>All participants get prizes- isn't that something special? We also have cool prizes for winners, including certificates and more.</p>
+</div>
+
+
+      
+
+    <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("December 31, 2023 09:00:00").getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get today's date and time
+      var now = new Date().getTime();
+        
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+        
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+      // Output the result in an element with id="demo"
+      document.getElementById("days").innerHTML = days;
+      document.getElementById("hours").innerHTML = hours;
+      document.getElementById("minutes").innerHTML = minutes;
+      document.getElementById("seconds").innerHTML = seconds;
+        
+      // If the count down is over, write some text 
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("days").innerHTML = 00;
+        document.getElementById("hours").innerHTML = 00;
+        document.getElementById("minutes").innerHTML = 00;
+        document.getElementById("seconds").innerHTML = 00; 
+      }
+    }, 1000);
+    </script>
+
+    <footer>
+        <h1>Meet Our Team</h1>
+        <ul>
+            <li>Eshaan Vaswani</li>
+            <li>Sahil Gurnani</li>
+            <li>Param Wagwani</li>
+        </ul>
+        © Team Error
+    </footer>
+    
+</body>
+</html>
+    
